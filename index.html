@@ -190,6 +190,68 @@
       </div>
     </div>
 
+    <!-- WORK COLLAPSE -->
+    <div id="work" class="collapse">
+      <div class="card card-body text-white bg-warning p-5">
+        <h2>Meus Trabalhos</h2>
+        <p class="lead">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, nulla.
+        </p>
+      </div>
+
+      <div class="card card-body p-5">
+        <h3>O quê eu tenho desenvolvido?</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ducimus tempora, cumque soluta repellat amet.
+        </p>
+        <div class="row no-gutters">
+          <div class="col-md-3">
+            <a href="https://unsplash.it/1200/768.jpg?image=252" data-toggle="lightbox">
+              <img src="https://unsplash.it/600.jpg?image=252" class="img-fluid" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="https://unsplash.it/1200/768.jpg?image=253" data-toggle="lightbox">
+              <img src="https://unsplash.it/600.jpg?image=253" class="img-fluid" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="https://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox">
+              <img src="https://unsplash.it/600.jpg?image=254" class="img-fluid" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="https://unsplash.it/1200/768.jpg?image=255" data-toggle="lightbox">
+              <img src="https://unsplash.it/600.jpg?image=255" class="img-fluid" />
+            </a>
+          </div>
+        </div>
+
+        <div class="row no-gutters">
+          <div class="col-md-3">
+            <a href="https://unsplash.it/1200/768.jpg?image=256" data-toggle="lightbox">
+              <img src="https://unsplash.it/600.jpg?image=256" class="img-fluid" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="https://unsplash.it/1200/768.jpg?image=257" data-toggle="lightbox">
+              <img src="https://unsplash.it/600.jpg?image=257" class="img-fluid" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="https://unsplash.it/1200/768.jpg?image=258" data-toggle="lightbox">
+              <img src="https://unsplash.it/600.jpg?image=258" class="img-fluid" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="https://unsplash.it/1200/768.jpg?image=259" data-toggle="lightbox">
+              <img src="https://unsplash.it/600.jpg?image=259" class="img-fluid" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- FOOTER -->
     <footer id="main-footer" class="text-white bg-dark p-5">
       <div class="row">
@@ -224,6 +286,12 @@
     // Hide others opened collapse content before open the current
     $('.portfolio-item').click(function(){
       $('.collapse').collapse('hide');
+    });
+
+    // Add open works image like a modal lightbox
+    $(document).on('click', '[data-toggle="lightbox"]', function(e){
+      e.preventDefault();
+      $(this).ekkoLightbox();
     });
   </script>
 </body>
